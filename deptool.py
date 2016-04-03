@@ -5,7 +5,7 @@ import json, subprocess, getopt, sys, os
 def usage():
 	#Print correct usage of the script
 	print "Usage:\n\n -p, --path: path to tarballs\n -v, --version: build version\n -c, --config: path to config file\n"
-	print "Example: ./deptool.py -c /root/deptool/config.json -v 3678 -p /root/deptool/source\n"
+	print "Example: ./deptool.py -c config.json -v 3678 -p source\n"
 
 #Define script arguments/options
 try:
