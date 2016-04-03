@@ -4,7 +4,7 @@
 
 ### Description ###
 
-'deptool.py' script facilitates deployment of Kixeye's software into a cluster of Linux servers.
+'deptool.py' script facilitates deployment of software into a cluster of Linux servers.
 
 'source' directory contains tarballs with the source code/software in the following format: ‘<artifact>-<Version#>.tar.gz’.
 Path to the source directory must be supplied to the script as a CLI argument using -p or --path option.
