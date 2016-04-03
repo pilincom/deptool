@@ -54,9 +54,9 @@ with open(config_path) as config_file:
 
 #Iterate over a list of hosts retrieved from the config file
 for artifact in data:
-        print "Working on %s artifatct..." % artifact
+        print "Working on %s artifatct...\n" % artifact
         for host in data[artifact]['hosts']:
-                print "Copying %s-%s.tar.gz to %s/%s on %s..." % (artifact,build_version,dest_path,artifact,host)
+                print "Copying file(s) to %s:" % host
                 #Copy tarballs to corresponding locations on servers specified in the config file 
                 subprocess.call(copy_tarball % (source_path,artifact,build_version,host,dest_path,artifact), shell = True)
                 print "Backing up existing version and unpacking %s-%s.tar.gz..." % (artifact,build_version)
